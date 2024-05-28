@@ -2,7 +2,7 @@
  * 
  */
 
-export default class Sprite {
+export default class ImageSprite {
 
     private img: HTMLImageElement;
     private numCols: number;

@@ -1,5 +1,5 @@
 {
-  "name": "@brendangooch/sprite",
+  "name": "@brendangooch/image-sprite",
   "version": "1.0.0",
   "description": "",
   "author": "B Gooch <brendangooch@gmail.com>",
@@ -16,9 +16,9 @@
     "access": "public"
   },
   "exports": {
-    ".": "./lib/sprite.js"
+    ".": "./lib/image-sprite.js"
   },
-  "types": "./lib/sprite.d.ts",
+  "types": "./lib/image-sprite.d.ts",
   "files": [
     "/lib",
     "!/lib/**/*.js.map",
@@ -29,11 +29,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brendangooch/sprite.git"
+    "url": "git+https://github.com/brendangooch/image-sprite.git"
   },
-  "homepage": "https://github.com/brendangooch/sprite#readme",
+  "homepage": "https://github.com/brendangooch/image-sprite#readme",
   "bugs": {
-    "url": "https://github.com/brendangooch/sprite/issues",
+    "url": "https://github.com/brendangooch/image-sprite/issues",
     "email": "brendangooch@gmail.com"
   },
   "keywords": []
