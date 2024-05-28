@@ -1,0 +1,42 @@
+{
+  "name": "@brendangooch/sprite",
+  "version": "1.0.0",
+  "description": "",
+  "author": "B Gooch <brendangooch@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "prepack": "npm run build",
+    "prebuild": "npm run clean",
+    "clean": "rm -rf lib",
+    "build": "tsc"
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./lib/sprite.js"
+  },
+  "types": "./lib/sprite.d.ts",
+  "files": [
+    "/lib",
+    "!/lib/**/*.js.map",
+    "!/lib/*.js.map"
+  ],
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0",
+    "typescript": "^5.4.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brendangooch/sprite.git"
+  },
+  "homepage": "https://github.com/brendangooch/sprite#readme",
+  "bugs": {
+    "url": "https://github.com/brendangooch/sprite/issues",
+    "email": "brendangooch@gmail.com"
+  },
+  "keywords": []
+}
