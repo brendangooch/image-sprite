@@ -1,0 +1,9 @@
+
+v2.0.0
+    created index.ts barrel file in keeping with other packages in library
+    updated config files to current template files
+    added interface iSprite, which ImageSprite implements
+    exported interface from index.ts
+    changed getCell() method to col(): iSprite, row(): iSprite, which is cleaner and can be chained
+    didn't test as such a simple implementation
+    will fix any bugs if they appear when using package
