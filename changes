@@ -7,3 +7,9 @@ v2.0.0
     changed getCell() method to col(): iSprite, row(): iSprite, which is cleaner and can be chained
     didn't test as such a simple implementation
     will fix any bugs if they appear when using package
+
+v3.0.0
+    changed col() method to column()
+    removed column() and row() methods from iSprite interface
+        this gives implementing code more options for setting which column and row is selected
+        

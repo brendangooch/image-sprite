@@ -8,8 +8,6 @@ export interface iSprite {
     get y(): number;
     get width(): number;
     get height(): number;
-    col(col: number): iSprite;
-    row(row: number): iSprite;
 };
 
 export { ImageSprite } from './image-sprite.js';

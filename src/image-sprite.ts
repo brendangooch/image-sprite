@@ -37,8 +37,8 @@ export class ImageSprite implements iSprite {
         return this.img.height / this.numRows;
     }
 
-    public col(col: number): ImageSprite {
-        this.current.col = col;
+    public column(column: number): ImageSprite {
+        this.current.col = column;
         return this;
     }
 
