@@ -4,10 +4,12 @@
 
 export interface iSprite {
     get image(): HTMLImageElement;
-    get x(): number;
-    get y(): number;
-    get width(): number;
-    get height(): number;
+    get sx(): number;
+    get sy(): number;
+    get swidth(): number;
+    get sheight(): number;
+    get dwidth(): number;
+    get dheight(): number;
 };
 
 export { ImageSprite } from './image-sprite.js';

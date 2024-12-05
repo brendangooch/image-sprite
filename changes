@@ -12,4 +12,10 @@ v3.0.0
     changed col() method to column()
     removed column() and row() methods from iSprite interface
         this gives implementing code more options for setting which column and row is selected
-        
+
+v4.0.0
+    changed get column() back to get col()
+    added scale property to constructor
+    updated to latest tsconfig template
+    changed methods to reflect HTMLCanvas drawImage() method params: sx, sy, swidth, sheight, dwidth, dheight
+    client code can now set the scale on instantiation to obtain correctly scaled dwidth and dheight
