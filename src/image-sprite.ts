@@ -10,16 +10,14 @@ export class ImageSprite implements iSprite {
     private properties = {
         numCols: 1,
         numRows: 1,
-        col: 1,
+        column: 1,
         row: 1,
-        scale: 1
     };
 
-    public constructor(img: HTMLImageElement, numCols: number, numRows: number, scale: number = 1) {
+    public constructor(img: HTMLImageElement, numCols: number, numRows: number) {
         this.img = img;
         this.properties.numCols = numCols;
         this.properties.numRows = numRows;
-        this.properties.scale = scale;
     }
 
     public get image(): HTMLImageElement {
@@ -27,7 +25,7 @@ export class ImageSprite implements iSprite {
     }
 
     public get sx(): number {
-        return (this.properties.col - 1) * this.swidth;
+        return (this.properties.column - 1) * this.swidth;
     }
 
     public get sy(): number {
@@ -42,16 +40,8 @@ export class ImageSprite implements iSprite {
         return this.img.height / this.properties.numRows;
     }
 
-    public get dwidth(): number {
-        return this.swidth * this.properties.scale;
-    }
-
-    public get dheight(): number {
-        return this.sheight * this.properties.scale;
-    }
-
     public col(column: number): ImageSprite {
-        this.properties.col = column;
+        this.properties.column = column;
         return this;
     }
 

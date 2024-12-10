@@ -1,21 +1,28 @@
 
 v2.0.0
-    created index.ts barrel file in keeping with other packages in library
-    updated config files to current template files
-    added interface iSprite, which ImageSprite implements
-    exported interface from index.ts
-    changed getCell() method to col(): iSprite, row(): iSprite, which is cleaner and can be chained
-    didn't test as such a simple implementation
-    will fix any bugs if they appear when using package
+created index.ts barrel file in keeping with other packages in library
+updated config files to current template files
+added interface iSprite, which ImageSprite implements
+exported interface from index.ts
+changed getCell() method to col(): iSprite, row(): iSprite, which is cleaner and can be chained
+didn't test as such a simple implementation
+will fix any bugs if they appear when using package
 
 v3.0.0
-    changed col() method to column()
-    removed column() and row() methods from iSprite interface
-        this gives implementing code more options for setting which column and row is selected
+changed col() method to column()
+removed column() and row() methods from iSprite interface
+this gives implementing code more options for setting which column and row is selected
 
 v4.0.0
-    changed get column() back to get col()
-    added scale property to constructor
-    updated to latest tsconfig template
-    changed methods to reflect HTMLCanvas drawImage() method params: sx, sy, swidth, sheight, dwidth, dheight
-    client code can now set the scale on instantiation to obtain correctly scaled dwidth and dheight
+changed get column() back to get col()
+added scale property to constructor
+updated to latest tsconfig template
+changed methods to reflect HTMLCanvas drawImage() method params: sx, sy, swidth, sheight, dwidth, dheight
+client code can now set the scale on instantiation to obtain correctly scaled dwidth and dheight
+
+v5.0.0
+changed ImageSprite class again
+removed scale property as client code may need to adjust width and height of image dynamically
+removed dwidth and dheight from iSprite, client will set these independently
+bitmap images used in each application will be scaled to required size manually to improve canvas efficiency
+browser then only needs to scale the image if a width or height other than default cell width and height is required
